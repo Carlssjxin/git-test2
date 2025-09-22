@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- 文档根元素，设置语言为中文简体 -->
+<head>
+    <!-- 文档头部，包含元数据和页面信息 -->
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式设计设置 -->
+    <title>个人简历 - 张三</title> <!-- 页面标题 -->
+</head>
+<body>
+    <!-- 页面主体内容开始 -->
+    
+    <!-- 头部区域：包含个人基本信息和导航 -->
+    <header id="top" role="banner"> <!-- 页面头部，role属性增强可访问性 -->
+        <h1>张三</h1> <!-- 一级标题：姓名 -->
+        
+        <!-- 头像区域 -->
+        <figure> <!-- 语义化标签，表示独立内容 -->
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                 alt="张三的头像" 
+                 width="150" 
+                 height="150"> <!-- 头像图片，alt属性提供替代文本 -->
+            <figcaption>前端开发工程师</figcaption> <!-- 图片标题/描述 -->
+        </figure>
+        
+        <!-- 主导航菜单 -->
+        <nav aria-label="主要导航"> <!-- 导航区域，aria-label提供描述 -->
+            <ul> <!-- 无序列表组织导航项 -->
+                <li><a href="#skills">专业技能</a></li> <!-- 导航链接1 -->
+                <li><a href="#projects">项目经验</a></li> <!-- 导航链接2 -->
+                <li><a href="#contact">联系方式</a></li> <!-- 导航链接3 -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main id="main-content" role="main"> <!-- 页面主要内容区域 -->
+        
+        <!-- 专业技能部分 -->
+        <section id="skills" aria-labelledby="skills-heading"> <!-- 内容区块，aria-labelledby关联标题 -->
+            <h2 id="skills-heading">专业技能</h2> <!-- 二级标题 -->
+            
+            <!-- 前端技术子部分 -->
+            <article> <!-- 独立的内容区块 -->
+                <h3>前端技术</h3> <!-- 三级标题 -->
+                <ul> <!-- 无序列表展示技能 -->
+                    <li>HTML5 & CSS3 - 精通</li> <!-- 列表项1 -->
+                    <li>JavaScript/ES6+ - 精通</li> <!-- 列表项2 -->
+                    <li>React/Vue - 熟练</li> <!-- 列表项3 -->
+                    <li>响应式设计 - 精通</li> <!-- 列表项4 -->
+                </ul>
+            </article>
+            
+            <!-- 后端技术子部分 -->
+            <article>
+                <h3>后端技术</h3>
+                <ul>
+                    <li>Node.js - 熟练</li>
+                    <li>Python/Django - 了解</li>
+                    <li>SQL/NoSQL - 熟练</li>
+                </ul>
+            </article>
+            
+            <!-- 其他技能子部分 -->
+            <article>
+                <h3>其他技能</h3>
+                <ul>
+                    <li>Git版本控制</li>
+                    <li>Webpack/Vite</li>
+                    <li>UI/UX设计基础</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 项目经验部分 -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">项目经验</h2> <!-- 二级标题 -->
+            
+            <!-- 项目1 -->
+            <article>
+                <h3>企业电商平台</h3> <!-- 项目名称 -->
+                <time datetime="2023-01">2023年1月 - 至今</time> <!-- 时间元素，datetime属性为机器可读格式 -->
+                <p>负责前端架构设计和核心功能开发，使用React+Redux实现复杂状态管理，优化页面加载速度40%</p> <!-- 项目描述 -->
+                <ul> <!-- 项目成就列表 -->
+                    <li>实现响应式布局，适配多终端</li>
+                    <li>开发商品搜索和筛选功能</li>
+                    <li>集成支付和订单跟踪系统</li>
+                </ul>
+            </article>
+            
+            <!-- 项目2 -->
+            <article>
+                <h3>社交媒体移动应用</h3>
+                <time datetime="2022-03">2022年3月 - 2022年12月</time>
+                <p>使用Vue.js开发前端界面，实现实时通讯和内容分享功能</p>
+                <ul>
+                    <li>设计并实现用户个人资料系统</li>
+                    <li>开发实时消息推送功能</li>
+                    <li>优化图片加载性能</li>
+                </ul>
+            </article>
+            
+            <!-- 项目3 -->
+            <article>
+                <h3>数据可视化仪表盘</h3>
+                <time datetime="2021-06">2021年6月 - 2021年12月</time>
+                <p>使用D3.js开发交互式数据可视化组件，展示企业关键业务指标</p>
+                <ul>
+                    <li>设计可定制的图表组件</li>
+                    <li>实现数据实时更新功能</li>
+                    <li>开发数据导出和分享功能</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <!-- 页脚区域：包含联系信息 -->
+    <footer id="contact" role="contentinfo"> <!-- 页面页脚，role属性增强可访问性 -->
+        <h2>联系方式</h2> <!-- 二级标题 -->
+        
+        <!-- 联系信息 -->
+        <address> <!-- 语义化标签，表示联系信息 -->
+            <p>邮箱: <a href="mailto:zhangsan@example.com">zhangsan@example.com</a></p> <!-- 邮箱链接 -->
+            <p>电话: <a href="tel:+8613800138000">138-0013-8000</a></p> <!-- 电话链接 -->
+            <p>地址: 北京市海淀区科技园区88号</p> <!-- 地址信息 -->
+        </address>
+        
+        <!-- 社交媒体导航 -->
+        <nav aria-label="社交媒体链接"> <!-- 导航区域，aria-label提供描述 -->
+            <ul> <!-- 无序列表组织社交媒体链接 -->
+                <li><a href="https://github.com" aria-label="GitHub">GitHub</a></li> <!-- 社交媒体链接1 -->
+                <li><a href="https://linkedin.com" aria-label="LinkedIn">LinkedIn</a></li> <!-- 社交媒体链接2 -->
+                <li><a href="https://twitter.com" aria-label="Twitter">Twitter</a></li> <!-- 社交媒体链接3 -->
+            </ul>
+        </nav>
+        
+        <!-- 页脚辅助导航 -->
+        <p><a href="#top">返回顶部</a></p> <!-- 返回顶部链接 -->
+        <p>&copy; 2023 张三 - 个人简历</p> <!-- 版权信息 -->
+    </footer>
+</body>
+</html>
