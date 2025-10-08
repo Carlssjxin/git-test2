@@ -1,0 +1,149 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 页面整体样式 */
+body {
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+/* 下拉菜单容器 */
+.dropdown-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+/* 下拉按钮样式 */
+.dropdown-btn {
+    width: 100%;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* 下拉菜单内容 */
+.dropdown-content {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+
+.dropdown-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+/* 下拉菜单项 */
+.dropdown-item {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background: #f8f5ff;
+}
+
+.dropdown-item i {
+    margin-right: 15px;
+    color: #8E2DE2;
+    font-size: 1.1rem;
+    width: 24px;
+    text-align: center;
+}
+
+.dropdown-item span {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 使用说明样式 */
+.instructions {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.instructions h2 {
+    color: #4A00E0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.instructions p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.instructions p:last-child {
+    margin-bottom: 0;
+}
