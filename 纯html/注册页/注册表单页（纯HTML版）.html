@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>注册表单页（纯 HTML 版）</title>
+  </head>
+  <body>
+    <!-- 注册表单页面 -->
+    <header>
+      <h1>用户注册</h1>
+      <p>欢迎注册成为本站会员，请填写以下信息。</p>
+    </header>
+
+    <hr />
+
+    <!-- 注册表单 -->
+    <form action="/register" method="post">
+      <!-- 用户名 -->
+      <label for="username">用户名：</label>
+      <input type="text" id="username" name="username" required />
+      <br /><br />
+
+      <!-- 邮箱 -->
+      <label for="email">邮箱：</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <!-- 密码 -->
+      <label for="password">密码：</label>
+      <input type="password" id="password" name="password" required />
+      <br /><br />
+
+      <!-- 确认密码 -->
+      <label for="confirm">确认密码：</label>
+      <input type="password" id="confirm" name="confirm" required />
+      <br /><br />
+
+      <!-- 性别选择 -->
+      <label>性别：</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">男</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">女</label>
+      <br /><br />
+
+      <!-- 兴趣选择 -->
+      <label>兴趣爱好：</label><br />
+      <input type="checkbox" id="sports" name="hobby" value="sports" />
+      <label for="sports">运动</label>
+      <input type="checkbox" id="music" name="hobby" value="music" />
+      <label for="music">音乐</label>
+      <input type="checkbox" id="reading" name="hobby" value="reading" />
+      <label for="reading">阅读</label>
+      <br /><br />
+
+      <!-- 提交按钮 -->
+      <button type="submit">注册</button>
+      <!-- 重置按钮 -->
+      <button type="reset">重置</button>
+    </form>
+
+    <hr />
+
+    <!-- 页脚 -->
+    <footer>
+      <p>已有账号？<a href="/login" target="_self">点击登录</a></p>
+    </footer>
+  </body>
+</html>

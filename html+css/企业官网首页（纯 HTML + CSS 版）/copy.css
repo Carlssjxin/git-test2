@@ -1,0 +1,137 @@
+/* ================================= */
+/* 企业官网首页样式（HTML + CSS）   */
+/* ================================= */
+
+/* 页面通用设置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0; /* 去掉默认外边距 */
+  font-family: "Microsoft YaHei", Arial; /* 设置中文友好字体 */
+  background-color: #f8f9fa; /* 背景为浅灰色 */
+  color: #333; /* 默认文字颜色 */
+  /* height: 2000px; */
+}
+/* ====================== */
+/* 导航栏（Navbar）样式 */
+/* ====================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 3px 8px gainsboro;
+}
+.navbar .logo {
+  color: #007bff;
+  font-size: 22px;
+  font-weight: bold;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.navbar ul a {
+  text-decoration: none;
+}
+/* ====================== */
+/* Banner 横幅样式 */
+/* ====================== */
+.banner {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../1.png);
+  background-color: #f5f5f5;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 10px 8px gainsboro;
+  text-align: center;
+  /* align-items: center; */
+}
+.banner h1 {
+  /* margin-top: 100px; */
+  padding-top: 20vh;
+  margin-bottom: 20px;
+  text-shadow: 0 10px 8px gainsboro;
+  font-size: 36px;
+}
+/* ====================== */
+/* 公司简介样式 */
+.about {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  padding-top: 100px;
+  background-color: #f5f5f5f;
+}
+.about h2 {
+  color: rgb(221, 208, 208);
+  margin-bottom: 20px;
+}
+
+/* ====================== */
+/* 产品展示样式 */
+/* ====================== */
+.products {
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.products h2 {
+  margin-bottom: 30px;
+}
+.products .product-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+
+
+}
+.products .product-item {
+
+  background-color: #ffff;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow:  0 3px 8px silver;
+}
+.products .product-item img{
+  width: 100%;
+  height: 60%;
+  object-fit: cover; object-position: center;
+
+}
+.products .product-item .desc h3{
+  padding:20px 20px 10px 20px;
+  color: #007bff;
+  font-size: 20px;
+
+}
+/* ====================== */
+/* 页脚 Footer 样式 */
+/* ====================== */
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #e9ecef;
+  text-align: center;
+  padding-top: 50px;
+}
+footer p:first-child {
+  margin-bottom:20px;
+}
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}

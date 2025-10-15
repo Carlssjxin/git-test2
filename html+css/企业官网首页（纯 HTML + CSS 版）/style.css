@@ -1,0 +1,161 @@
+/* ================================= */
+/* 企业官网首页样式（HTML + CSS）   */
+/* ================================= */
+
+/* 页面通用设置 */
+body {
+  margin: 0;                                 /* 去掉默认外边距 */
+  font-family: "Microsoft YaHei", Arial;     /* 设置中文友好字体 */
+  background-color: #f8f9fa;                 /* 背景为浅灰色 */
+  color: #333;                               /* 默认文字颜色 */
+}
+
+/* ====================== */
+/* 导航栏（Navbar）样式 */
+/* ====================== */
+.navbar {
+  display: flex;                             /* 使用 Flex 布局 */
+  justify-content: space-between;            /* 左右分布 */
+  align-items: center;                       /* 垂直居中 */
+  background-color: #ffffff;                 /* 背景为白色 */
+  padding: 10px 60px;                        /* 内边距 */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);     /* 阴影效果 */
+  position: sticky;                          /* 滚动时固定顶部 */
+  top: 0;                                    /* 贴顶显示 */
+  z-index: 10;                               /* 层级较高 */
+}
+
+.logo {
+  font-size: 22px;                           /* Logo 字体大小 */
+  font-weight: bold;                         /* 加粗 */
+  color: #007bff;                            /* 蓝色字体 */
+}
+
+.nav-menu {
+  list-style: none;                          /* 去掉列表圆点 */
+  display: flex;                             /* 横向排列 */
+  gap: 30px;                                 /* 菜单间距 */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;                     /* 去除下划线 */
+  color: #333;                               /* 默认字体颜色 */
+  font-weight: 500;                          /* 半粗体 */
+  transition: color 0.3s;                    /* 颜色变化过渡动画 */
+}
+
+.nav-menu a:hover {
+  color: #007bff;                            /* 悬停变蓝 */
+}
+
+/* ====================== */
+/* Banner 横幅样式 */
+/* ====================== */
+.banner {
+  height: 400px;                             /* 固定高度 */
+  background-image: url('../../1.png');/* 背景图路径 */
+  background-size: cover;                    /* 自动填满容器 */
+  background-position: center;               /* 居中显示 */
+
+  display: flex;                             /* Flex 布局 */
+  flex-direction: column;                    /* 纵向排列文字 */
+  justify-content: center;                   /* 垂直居中 */
+  align-items: center;                       /* 水平居中 */
+  text-align: center;                        /* 文字居中 */
+  
+  color: #fff;                               /* 白色文字 */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);  /* 文字阴影 */
+}
+
+.banner-title {
+  font-size: 48px;                           /* 主标题字体大小 */
+  margin-bottom: 10px;                       /* 间距 */
+}
+
+.banner-subtitle {
+  font-size: 20px;                           /* 副标题字体大小 */
+}
+
+/* ====================== */
+/* 公司简介样式 */
+/* ====================== */
+.about {
+  text-align: center;                        /* 居中显示 */
+  padding: 60px 20px;                        /* 上下内边距 */
+  background-color: #fff;                    /* 白色背景 */
+}
+
+.about h2 {
+  color: #007bff;                            /* 蓝色标题 */
+  font-size: 28px;
+}
+
+/* ====================== */
+/* 产品展示样式 */
+/* ====================== */
+.products {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.product-grid {
+  display: grid;                             /* 使用 CSS Grid 布局 */
+  grid-template-columns: repeat(3, 1fr);     /* 3 栏等宽 */
+  gap: 20px;                                 /* 间距 */
+  margin-top: 30px;                          /* 标题与网格间距 */
+}
+
+/* 产品卡片样式 */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;                           /* 防止溢出破坏圆角 */
+  transition: transform 0.3s, box-shadow 0.3s;/* 悬停动画 */
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;                         /* 图片保持比例裁剪 */
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 16px 0 8px;
+  color: #007bff;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #555;
+  padding: 0 16px 20px;
+}
+
+/* ====================== */
+/* 页脚 Footer 样式 */
+/* ====================== */
+.footer {
+  background-color: #e9ecef;                 /* 浅灰背景 */
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+  font-size: 14px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);    /* 顶部阴影 */
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;                /* 悬停加下划线 */
+}

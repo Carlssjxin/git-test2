@@ -1,0 +1,75 @@
+/* ============================= */
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: #f8f9fa;
+  text-align: center;
+  color: #333;
+}
+
+/* 轮播图容器 */
+.carousel {
+  position: relative;       /* 方便定位按钮 */
+  max-width: 600px;         /* 最大宽度 */
+  margin: 0 auto;           /* 居中 */
+  overflow: hidden;         /* 隐藏溢出图片 */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* 图片列表 */
+.slides {
+  position: relative;
+}
+
+/* 单张图片 */
+.slide {
+  display: none;            /* 默认隐藏 */
+  width: 100%;              /* 图片自适应容器 */
+  height: 300px;            /* 固定高度 */
+  object-fit: cover;        /* 保持比例裁剪 */
+}
+
+/* 当前显示图片 */
+.slide.active {
+  display: block;           /* 当前图片显示 */
+}
+
+/* 左右切换按钮 */
+.prev, .next {
+  position: absolute;
+  top: 50%;                 /* 垂直居中 */
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5); /* 半透明背景 */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev { left: 10px; }       /* 左边按钮位置 */
+.next { right: 10px; }      /* 右边按钮位置 */
+
+/* 指示点 */
+.dots {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #007bff; /* 当前图片对应的点高亮 */
+}

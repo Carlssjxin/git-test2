@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明 HTML5 文档类型 -->
+<html lang="zh-CN"> <!-- 设置页面语言为中文 -->
+<head>
+  <meta charset="UTF-8"> <!-- 设置字符编码为 UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 适配移动端 -->
+  <title>我的个人博客</title> <!-- 网页标题 -->
+  <link rel="stylesheet" href="style.css"> <!-- 连接外部样式文件 -->
+</head>
+<body>
+
+  <!-- ===================== -->
+  <!-- 顶部导航栏（Header） -->
+  <!-- ===================== -->
+  <header class="header">
+    <h1 class="site-title">我的个人博客</h1> <!-- 博客标题 -->
+    <p class="site-subtitle">记录生活 · 分享技术 · 留下足迹</p> <!-- 副标题 -->
+  </header>
+
+  <!-- ===================== -->
+  <!-- 主体内容区域（Main） -->
+  <!-- 使用左右双栏布局 -->
+  <!-- ===================== -->
+  <main class="container">
+
+    <!-- ===== 左侧文章列表 ===== -->
+    <section class="post-list">
+
+      <!-- 单篇文章卡片 -->
+      <article class="post">
+        <h2 class="post-title"><a href="#">如何开始前端开发之路</a></h2>
+        <p class="post-meta">2025-10-13 | 分类：前端基础</p>
+        <p class="post-summary">
+          学习前端从哪里开始？HTML、CSS、JavaScript 三大核心如何入门？本文为你详细解析前端学习路线。
+        </p>
+      </article>
+
+      <article class="post">
+        <h2 class="post-title"><a href="#">CSS 布局完全指南</a></h2>
+        <p class="post-meta">2025-10-10 | 分类：CSS 进阶</p>
+        <p class="post-summary">
+          本文系统介绍 Flex、Grid、Position 等布局方式，帮你构建更优雅的页面结构。
+        </p>
+      </article>
+
+      <article class="post">
+        <h2 class="post-title"><a href="#">HTML5 新特性详解</a></h2>
+        <p class="post-meta">2025-10-08 | 分类：HTML 技术</p>
+        <p class="post-summary">
+          HTML5 提供了更多语义标签、视频音频支持和表单增强功能，让前端开发更加高效。
+        </p>
+      </article>
+
+    </section>
+
+    <!-- ===== 右侧侧边栏 ===== -->
+    <aside class="sidebar">
+
+      <!-- 作者简介 -->
+      <div class="sidebar-section">
+        <h3>关于我</h3>
+        <img src="../../1.png" alt="作者头像" class="avatar">
+        <p>你好，我是小李，一名前端开发爱好者，喜欢分享学习心得与实用技巧。</p>
+      </div>
+
+      <!-- 分类列表 -->
+      <div class="sidebar-section">
+        <h3>分类</h3>
+        <ul>
+          <li><a href="#">前端基础</a></li>
+          <li><a href="#">CSS 技巧</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">项目实战</a></li>
+        </ul>
+      </div>
+
+      <!-- 联系方式 -->
+      <div class="sidebar-section">
+        <h3>联系我</h3>
+        <p>邮箱：<a href="mailto:me@blog.com">me@blog.com</a></p>
+        <p>GitHub：<a href="#">github.com/myblog</a></p>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- ===================== -->
+  <!-- 页脚（Footer） -->
+  <!-- ===================== -->
+  <footer class="footer">
+    <p>© 2025 我的个人博客 | 保留所有权利</p>
+  </footer>
+
+</body>
+</html>

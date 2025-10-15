@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>轮播图示例</title>
+  <link rel="stylesheet" href="style.css"> <!-- 引入 CSS -->
+</head>
+<body>
+
+  <h1>🖼 最小轮播图示例</h1>
+
+  <!-- 轮播图容器 -->
+  <div class="carousel">
+
+    <!-- 图片列表 -->
+    <div class="slides">
+      <img src="../../1.png" class="slide active" alt="图片1">
+      <img src="../../2.png" class="slide" alt="图片2">
+      <img src="../../3.png" class="slide" alt="图片3">
+    </div>
+
+    <!-- 左右切换按钮 -->
+    <button class="prev">&lt;</button>
+    <button class="next">&gt;</button>
+
+    <!-- 指示点 -->
+    <div class="dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script> <!-- 引入 JS -->
+</body>
+</html>

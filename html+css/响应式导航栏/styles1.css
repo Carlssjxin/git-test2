@@ -1,0 +1,79 @@
+/* base样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.element {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+ol,
+ul {
+  /* 让li的点没了 */
+  list-style: none;
+}
+
+/* 导航栏容器样式 */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 62px;
+  padding: 15px 5%;
+  color: #333;
+}
+
+/* logo样式 */
+.nav1 a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
+}
+.nav1 a i {
+  font-size: 28px;
+  color: blue;
+  margin-right: 10px;
+
+  
+  
+}
+.nav1 a .text {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+}
+.nav1 a span {
+  color: blue;
+ 
+}
+
+/* 菜单栏导航 */
+.nav .caidan ul  {
+  display: flex;
+  
+  gap: 10px;
+  justify-content: space-between;
+}
+.nav .caidan ul a {
+  color: #1f1f1f
+  display: block;
+  padding: 8px 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* 汉堡菜单 */
+.hanbao {
+  display: none;
+}

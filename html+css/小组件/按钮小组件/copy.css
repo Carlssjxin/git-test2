@@ -1,0 +1,35 @@
+/* 按钮（Button） 基础按钮 + 悬停变化 圆角、阴影、hover变色 （html+css版本）分成多个文件 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  padding: 30px;
+  background-color: #fff;
+}
+section h1 {
+  margin-bottom: 30px;
+}
+.btn {
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background-color: #bfb7b7;
+   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  margin-right: 20px;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #d6d6d6;       /* 背景颜色变深一点 */
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.3); /* 阴影变得更明显 */
+}
+
+.btn-primary {
+  background-color: red;
+}
+.btn-primary:hover {
+  background-color: green;
+}

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+
+  padding: 40px;
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.tab-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.tab-container .tab-btns {
+  display: flex;
+  justify-content: center;
+}
+.tab-container .tab-btns .tab-btn {
+  flex: 1;
+  border: none;
+  padding: 15px 0;
+  font-size: 16px;
+  border-bottom: 1px solid blue;
+}
+.tab-btn.active {
+  background-color: rgb(45, 204, 177);
+}
+.tab-container .tab-contents .tab-content{
+  display: none;
+  text-align: left;
+  padding: 40px 20px;
+}
+
+.tab-container .tab-contents .active{
+  display: block;
+}
+.tab-container .tab-contents h2 {
+  margin-bottom: 15px;
+}

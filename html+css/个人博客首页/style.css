@@ -1,0 +1,147 @@
+/* ================================ */
+/* 博客首页样式（HTML + CSS）      */
+/* ================================ */
+
+/* 全局基础样式 */
+body {
+  margin: 0;                              /* 去除默认外边距 */
+  font-family: "Microsoft YaHei", Arial;  /* 设置中文字体 */
+  background-color: #f8f9fa;              /* 浅灰背景 */
+  color: #333;                            /* 默认文字颜色 */
+}
+
+/* 标题区域 Header */
+.header {
+  background-color: #007bff;              /* 蓝色背景 */
+  color: #fff;                            /* 白色文字 */
+  text-align: center;                     /* 居中 */
+  padding: 30px 10px;                     /* 内边距 */
+}
+
+.site-title {
+  margin: 0;                              /* 去掉默认外边距 */
+  font-size: 32px;                        /* 标题字体 */
+}
+
+.site-subtitle {
+  margin: 5px 0 0;                        /* 上方留空 */
+  font-size: 16px;
+}
+
+/* 主体容器：左右两栏 */
+.container {
+  display: flex;                          /* 启用 Flex 布局 */
+  max-width: 1200px;                      /* 最大宽度 */
+  margin: 30px auto;                      /* 居中显示 */
+  padding: 0 20px;                        /* 左右留白 */
+  gap: 20px;                              /* 两栏间距 */
+}
+
+/* 左栏：文章列表 */
+.post-list {
+  flex: 3;                                /* 占比 3/4 */
+}
+
+/* 单篇文章卡片 */
+.post {
+  background-color: #fff;                 /* 白底 */
+  border-radius: 8px;                     /* 圆角 */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);  /* 阴影 */
+  padding: 20px;                          /* 内边距 */
+  margin-bottom: 20px;                    /* 下间距 */
+  transition: transform 0.3s;             /* 悬停动画 */
+}
+
+.post:hover {
+  transform: translateY(-5px);            /* 悬停上移 */
+}
+
+.post-title {
+  margin-top: 0;                          /* 去默认上边距 */
+  font-size: 22px;                        /* 标题大小 */
+}
+
+.post-title a {
+  text-decoration: none;                  /* 去掉下划线 */
+  color: #007bff;                         /* 蓝色标题 */
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #666;                            /* 灰色小字 */
+}
+
+.post-summary {
+  margin-top: 10px;
+  line-height: 1.6;                       /* 行高 */
+}
+
+/* 右栏：侧边栏 */
+.sidebar {
+  flex: 1;                                /* 占比 1/4 */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  height: fit-content;                    /* 高度自适应内容 */
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.sidebar-section h3 {
+  border-bottom: 2px solid #007bff;       /* 下边框装饰线 */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.sidebar-section ul {
+  list-style: none;                       /* 去除列表符号 */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-section li {
+  margin-bottom: 8px;
+}
+
+.sidebar-section a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.sidebar-section a:hover {
+  text-decoration: underline;
+}
+
+/* 作者头像 */
+.avatar {
+  width: 100%;                            /* 宽度占满容器 */
+  border-radius: 8px;                     /* 圆角 */
+  margin-bottom: 10px;
+}
+
+/* 页脚 Footer */
+.footer {
+  background-color: #e9ecef;              /* 浅灰背景 */
+  text-align: center;
+  padding: 20px 0;
+  color: #555;
+  font-size: 14px;
+  margin-top: 30px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+/* ================================ */
+/* 响应式布局：小屏幕时改为单列显示 */
+/* ================================ */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;               /* 从左右改为上下排列 */
+  }
+
+  .sidebar {
+    order: -1;                            /* 让侧边栏显示在最上方 */
+  }
+}

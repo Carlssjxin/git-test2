@@ -1,0 +1,34 @@
+/* ============================= */
+/* 按钮组件基础样式               */
+/* ============================= */
+
+/* 通用按钮类 */
+.btn {
+  padding: 10px 20px;              /* 设置按钮内边距（上下10px，左右20px） */
+  border: none;                    /* 去掉默认边框 */
+  border-radius: 8px;              /* 设置圆角 */
+  background-color: #e0e0e0;       /* 设置默认背景色为浅灰色 */
+  color: #333;                     /* 设置文字颜色为深灰 */
+  font-size: 16px;                 /* 设置字体大小 */
+  cursor: pointer;                 /* 鼠标悬停时显示为“手型” */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* 添加轻微阴影 */
+  transition: background-color 0.3s, box-shadow 0.3s; /* 添加过渡动画（hover时平滑变化） */
+}
+
+/* 鼠标悬停（hover）时的效果 */
+.btn:hover {
+  background-color: #d6d6d6;       /* 背景颜色变深一点 */
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.3); /* 阴影变得更明显 */
+}
+
+/* 主要按钮样式（如提交、确认等） */
+.btn-primary {
+  background-color: #007bff;       /* 蓝色背景 */
+  color: white;                    /* 白色文字 */
+} 
+
+/* 鼠标悬停时主要按钮的变化 */
+.btn-primary:hover {
+  background-color: #0056b3;       /* 悬停时蓝色加深 */
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3); /* 增强阴影 */
+}

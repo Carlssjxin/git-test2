@@ -1,0 +1,50 @@
+/* ============================= */
+/* 登录输入框组件基础样式        */
+/* ============================= */
+
+/* 整个登录区域 */
+.login-box {
+  width: 300px;                          /* 设置登录框宽度 */
+  margin: 100px auto;                    /* 居中显示（上下100px间距） */
+  padding: 20px;                         /* 内边距 */
+  border: 1px solid #ccc;                /* 灰色边框 */
+  border-radius: 8px;                    /* 圆角 */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* 轻微阴影效果 */
+}
+
+/* 输入框通用样式 */
+input[type="text"],
+input[type="password"] {
+  width: 100%;                           /* 输入框宽度占满父容器 */
+  padding: 8px 10px;                     /* 设置输入框内边距 */
+  font-size: 16px;                       /* 字体大小 */
+  border: 1px solid #ccc;                /* 默认边框颜色 */
+  border-radius: 5px;                    /* 圆角边框 */
+  outline: none;                         /* 去除默认聚焦时的外框 */
+  transition: border-color 0.3s, box-shadow 0.3s; /* 过渡动画：边框与阴影变化 */
+}
+
+/* 当输入框获得焦点（focus）时的高亮效果 */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;                 /* 聚焦时边框变为蓝色 */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 添加蓝色发光阴影 */
+}
+
+/* 按钮样式 */
+button {
+  width: 100%;                           /* 按钮宽度占满父容器 */
+  padding: 10px;                         /* 按钮内边距 */
+  background-color: #007bff;             /* 按钮背景色为蓝色 */
+  color: white;                          /* 按钮文字为白色 */
+  border: none;                          /* 去掉边框 */
+  border-radius: 5px;                    /* 圆角按钮 */
+  cursor: pointer;                       /* 鼠标悬停变成手型 */
+  font-size: 16px;                       /* 按钮文字大小 */
+  transition: background-color 0.3s;     /* 背景颜色变化的过渡动画 */
+}
+
+/* 按钮悬停时颜色变化 */
+button:hover {
+  background-color: #0056b3;             /* 鼠标悬停时蓝色加深 */
+}

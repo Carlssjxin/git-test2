@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei", Arial;
+  background-color: #f8f9fa;
+  color: #333;
+  height: 1000px;
+}
+header {
+  text-align: center;
+  width: 100%;
+  padding: 30px 10px;
+  color: aliceblue;
+  background-color: #007bff;
+}
+header h1 {
+  font-size: 32px;
+}
+header p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+main {
+  width: 100%;
+
+  padding: 10px 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+main .zhulan {
+  flex: 3;
+}
+main .zhulan .zhulan-item {
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px silver;
+  border-radius: 20px;
+  padding: 20px 10px;
+  transition: all 0.3s;
+}
+main .zhulan .zhulan-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 3px 12px silver;
+}
+main .zhulan .zhulan-item h3 {
+  /* margin-bottom: 10px; */
+  color: #007bff;
+}
+main .zhulan .zhulan-item .time {
+  margin: 10px;
+  font-size: 14px;
+  color: #666;
+}
+main .zhulan .zhulan-item .container {
+  line-height: 1.6;
+}
+main .clean {
+  flex: 1;
+  padding: 30px 10px;
+  background-color: #fff;
+}
+main .clean h3 {
+  padding: 10px;
+  border-bottom: 2px solid #007bff;
+}
+main .clean img {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+main .clean .desc {
+  margin: 20px 0;
+}
+main .clean li {
+  list-style: none;
+  margin: 10px;
+}
+main .clean a {
+  color: #007bff;
+  text-decoration: none;
+}
+main .clean a:hover {
+  text-decoration: underline;
+}
+main .clean .sidebar-section p {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; /* 从左右改为上下排列 */
+  }
+}
